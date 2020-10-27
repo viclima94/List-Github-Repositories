@@ -26,3 +26,21 @@ Here is a nodeJS microsservice that we can pass a github user and list all the u
  3. yarn install || npm install
  4. yarn server.js
  5. Now we have our microsservice running at: localhost:8080
+
+# Testing our application
+
+  1. Endpoint:  /Login
+    For this we have to pass the following fields
+      {
+        "user": "admin"
+        "password": "12345"
+      }
+    This endpoint will pass a JWT password for we use on second endpoit 
+  
+  2. Endpoint: /?user=${user} 
+    Here we have to pass the JWT Token that the frist end point generate to us 
+      Content-type: application.json 
+      x-access-token: $token-here
+
+    OBS: Everytime you send a login request the JWT token changes! 
+
