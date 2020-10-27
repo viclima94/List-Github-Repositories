@@ -16,14 +16,13 @@ Here is a nodeJS microsservice that we can pass a github user and list all the u
   > nodemon: 2.0.6
   
 # We can Run with Docker 
- 1. Clone the Project
- 2. cd password-generator-react
- 3. docker-compose up -d --build
- 4. link: localhost:8080
+ 1. docker pull viclima94/nodeapi:1.0
+ 2. docker run -p 8080:8080 viclima94/nodeapi:1.0
+ 3. Now we have our Microsservice running at: localhost:8080
 
 # We can clone and run with Git
  1. Clone the Project
- 2. cd password-generator-react
- 3. npm install
- 4. npm start
- 5. link: localhost:8080
+ 2. cd List-Github-Repositories
+ 3. yarn install || npm install
+ 4. yarn server.js
+ 5. Now we have our microsservice running at: localhost:8080
