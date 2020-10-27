@@ -29,7 +29,7 @@ Here is a nodeJS microsservice that we can pass a github user and list all the u
 
 # Testing our application
 
-  1. Endpoint:  /Login
+   Endpoint:  /Login
     For this we have to pass the following fields
       {
         "user": "admin"
@@ -37,7 +37,7 @@ Here is a nodeJS microsservice that we can pass a github user and list all the u
       }
     This endpoint will pass a JWT password for we use on second endpoit 
   
-  2. Endpoint: /?user=${user} 
+   Endpoint: /?user=${user} 
     Here we have to pass the JWT Token that the frist end point generate to us 
       Content-type: application.json 
       x-access-token: $token-here
