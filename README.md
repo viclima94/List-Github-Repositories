@@ -16,14 +16,14 @@ Here is a nodeJS microsservice that we can pass a github user and list all the u
   > nodemon: 2.0.6
   
 # We can Run with Docker 
- 1. clone o projeto https://github.com/raphacm/password-generator-react.git
+ 1. Clone the Project
  2. cd password-generator-react
  3. docker-compose up -d --build
- 4. acesse localhost:8080
+ 4. link: localhost:8080
 
 # We can clone and run with Git
- 1. clone o projeto https://github.com/raphacm/password-generator-react.git
+ 1. Clone the Project
  2. cd password-generator-react
  3. npm install
  4. npm start
- 5. acesse localhost:8080
+ 5. link: localhost:8080
