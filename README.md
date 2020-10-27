@@ -30,17 +30,21 @@ Here is a nodeJS microsservice that we can pass a github user and list all the u
 # Testing our application
 
    Endpoint:  /Login
-    For this we have to pass the following fields
+   ```
+   For this we have to pass the following fields
       {
         "user": "admin"
         "password": "12345"
       }
+  ```
     This endpoint will pass a JWT password for we use on second endpoit 
   
-   Endpoint: /?user=${user} 
+   Endpoint: /?user=${user}
+   > *Change ${user} for any github nickname. Example: /?user=viclima94* 
+   ```
     Here we have to pass the JWT Token that the frist end point generate to us 
       Content-type: application.json 
       x-access-token: $token-here
-
+   ```
     OBS: Everytime you send a login request the JWT token changes! 
 
